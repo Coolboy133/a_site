@@ -1,0 +1,135 @@
+/* Colors
+    background pinkish - #ffd9f9
+    text and border color - #a64452
+*/
+
+
+body {
+    background-color: #ffd9f9;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    margin: 0.5%;
+    padding: 1%;
+    border-style: solid;
+    border-color: #a64452;
+    border-radius: 10px;
+    border-width: 4px;
+}
+
+* {
+    margin: 0;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 20;
+    color: #a64452;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 1200;
+}
+
+#title {
+    font-size: 16px;
+}
+
+#title1 {
+    font-size: 16px;
+    margin-bottom: 500%;
+}
+
+#ali1 {
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+#ali2 {
+    font-size: 32px;
+    letter-spacing: 3px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px rgba(166, 68, 82, 0.2);
+}
+
+#ali2a {
+    font-size: 40px;
+    letter-spacing: 3px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px rgba(166, 68, 82, 0.2);
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.reveal-text {
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.stats-container {
+    color: #a64452;
+}
+
+#present {
+    border-style: solid;
+    background-color: #ffedfc;
+    border-color: #a64452;
+    border-width: 4%;
+    margin: 4%;
+    margin-left: 6%;
+    margin-right: 6%;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.gallery-item {
+  flex: 1 1 45%; 
+  max-width: 600px; 
+  background: white;
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  box-sizing: border-box;
+}
+
+.gallery-item:only-child {
+  flex: 1 1 100%;
+  max-width: 800px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
